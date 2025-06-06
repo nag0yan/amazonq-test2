@@ -1,0 +1,22 @@
+aws_region = "ap-northeast-1"
+project_name = "webapp"
+vpc_cidr = "10.0.0.0/16"
+availability_zones = ["ap-northeast-1a", "ap-northeast-1c"]
+instance_type = "t3.micro"
+asg_desired_capacity = 2
+asg_min_size = 2
+asg_max_size = 4
+db_instance_class = "db.t3.small"
+db_name = "webappdb"
+db_username = "admin"
+db_password = "changeme" # 本番環境では必ず変更してください
+db_multi_az = true
+domain_name = "example.com" # 実際のドメイン名に変更してください
+certificate_arn = "" # 実際のACM証明書ARNに変更してください
+allowed_cidr_blocks = ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+replica_region = "us-west-2"
+
+# ElastiCache設定
+cache_node_type = "cache.t3.micro"
+cache_clusters = 2
+cache_auth_token = "changeme-auth-token" # 本番環境では必ず変更してください

@@ -1,0 +1,7 @@
+[tools]
+checkov = "latest"
+gitleaks = "latest"
+markdownlint-cli2 = "latest"
+node = "22"
+task = "latest"
+terraform = "1.12.1"
