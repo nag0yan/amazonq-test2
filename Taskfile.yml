@@ -6,5 +6,5 @@ tasks:
   ci:
     cmds:
       - gitleaks git --no-banner
-      - markdownlint-cli2 .
+      - markdownlint-cli2 . --fix
       - terraform fmt
